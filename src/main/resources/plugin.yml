@@ -1,0 +1,18 @@
+name: PhantomMarket
+version: 1.0
+main: org.example.phantommarket.PhantomMarket
+api-version: '1.21' # Или твоя версия (1.20, 1.21)
+author: ph4ntom
+commands:
+    phantom:
+        description: Основная команда плагина PhantomMarket
+        aliases: [pm]
+        usage: /phantom [edit|kill|shop|edit|boss]
+    pboss:
+        description: Быстрый вызов босса
+        usage: /pboss [edit|boss]
+        permission: phantom.admin
+permissions:
+    phantommarket.admin:
+        description: Полный доступ к управлению призрачным рынком
+        default: op
