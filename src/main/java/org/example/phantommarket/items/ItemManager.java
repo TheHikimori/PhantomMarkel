@@ -12,7 +12,7 @@ public class ItemManager {
     public static void init(PhantomMarket plugin) {
         registry.clear();
 
-        // Регистрация всех 17 предметов из твоей папки
+        // Регистрация всех 17 предметов
         register("dust", VoidDust.getItem(plugin));
         register("shard", EtherItems.getShard(plugin));
         register("head", PhantomHead.getItem(plugin));

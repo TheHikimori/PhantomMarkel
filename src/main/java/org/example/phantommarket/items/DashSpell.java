@@ -26,7 +26,7 @@ public class DashSpell {
         return item;
     }
 
-    // Метод для активации "фишки" рывка
+    // Метод для активации  рывка
     public static void execute(Player player) {
         // Толкаем игрока вперед по направлению взгляда
         Vector direction = player.getLocation().getDirection().multiply(1.6).setY(0.4);

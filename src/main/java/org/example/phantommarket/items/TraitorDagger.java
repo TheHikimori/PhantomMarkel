@@ -42,7 +42,7 @@ public class TraitorDagger {
             attacker.playSound(attacker.getLocation(), Sound.ENTITY_PLAYER_ATTACK_CRIT, 1.2f, 0.5f);
             victim.getWorld().spawnParticle(Particle.BLOCK, victim.getLocation().add(0, 1, 0), 30, 0.2, 0.2, 0.2, Material.REDSTONE_BLOCK.createBlockData());
 
-            // Накладываем "кровотечение" (иссушение)
+            // Накладываем иссушение
             victim.addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 60, 1));
 
             attacker.sendMessage("§4§l☠ §cУДАР В СПИНУ!");

@@ -67,7 +67,6 @@ public class PhantomCommand implements CommandExecutor, TabCompleter {
                 break;
 
             case "boss":
-                // ИСПРАВЛЕНО: проверяем args[1], так как args[0] это "boss"
                 if (args.length < 3 || !args[1].equalsIgnoreCase("spawn")) {
                     player.sendMessage("§cИспользуй: /pm boss spawn <тип>");
                     return true;
@@ -100,8 +99,7 @@ public class PhantomCommand implements CommandExecutor, TabCompleter {
                 break;
 
             case "shop":
-                // Если у тебя есть метод открытия магазина из кода, вставь его сюда
-                player.performCommand("market"); // Или вызов твоего GUI
+                player.performCommand("market");
                 break;
         }
         return true;

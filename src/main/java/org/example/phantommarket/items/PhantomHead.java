@@ -14,7 +14,7 @@ import java.util.List;
 public class PhantomHead {
     public static ItemStack getItem(PhantomMarket plugin) {
         ItemData data = new ItemData(plugin);
-        // Используем череп скелета как основу (или голову игрока, если есть текстура)
+        // Используем череп скелета как основу
         ItemStack item = new ItemStack(Material.SKELETON_SKULL);
         ItemMeta meta = item.getItemMeta();
         if (meta != null) {

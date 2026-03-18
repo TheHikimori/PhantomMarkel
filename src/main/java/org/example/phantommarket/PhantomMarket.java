@@ -19,7 +19,7 @@ public final class PhantomMarket extends JavaPlugin {
         BossEditor.init(this);
         ItemManager.init(this);
 
-        // 3. Регистрация команд (ИСПРАВЛЕНО)
+        // 3. Регистрация команд
         if (getCommand("phantom") != null) {
             PhantomCommand cmd = new PhantomCommand(this);
             getCommand("phantom").setExecutor(cmd);

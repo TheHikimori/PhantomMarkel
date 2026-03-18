@@ -25,7 +25,7 @@ public class MarketListener implements Listener {
     public void onInteract(PlayerInteractEntityEvent e) {
         if (e.getRightClicked() instanceof Villager v && v.getCustomName() != null && v.getCustomName().contains("Торговец")) {
             e.setCancelled(true);
-            // Используем статический метод open, как в твоем AdminEditor
+            // Используем статический метод open
             AdminEditor.open(e.getPlayer());
         }
     }

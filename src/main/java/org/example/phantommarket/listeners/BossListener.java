@@ -30,15 +30,14 @@ public class BossListener implements Listener {
 
             // 1. Логика для ЛЕГЕНДАРНОГО босса
             if (type.equals("legendary")) {
-                // Выдаем голову напрямую из ItemManager (это исключает Config Null)
+                // Выдаем голову напрямую из ItemManager
                 ItemStack head = ItemManager.getItem("head");
                 if (head != null) {
                     event.getDrops().add(head);
                 }
             }
 
-            // 2. Общий дроп для всех боссов из BossEditor (настроенный тобой через меню)
-            // Убедись, что в BossEditor метод getLootList() публичный и статический
+            // 2. Общий дроп для всех боссов из BossEditor
             for (ItemStack item : BossEditor.getLootList()) {
                 if (item != null) {
                     event.getDrops().add(item);

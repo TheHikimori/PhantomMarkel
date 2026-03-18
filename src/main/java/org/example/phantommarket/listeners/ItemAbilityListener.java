@@ -81,11 +81,10 @@ public class ItemAbilityListener implements Listener {
 
         ItemStack item = null;
 
-        // В 1.21.1 методы называются getItem()
         if (projectile instanceof Snowball snowball) {
             item = snowball.getItem();
         } else if (projectile instanceof AbstractArrow arrow) {
-            item = arrow.getItemStack(); // У стрел метод остался прежним
+            item = arrow.getItemStack();
         } else if (projectile instanceof EnderPearl pearl) {
             item = pearl.getItem();
         }
